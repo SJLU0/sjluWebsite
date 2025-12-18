@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+
+/* border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* html,
+body {
+  width: 100%;
+  overflow-x: hidden; 
+  margin: 0; 
+  padding: 0;
+} 
+*/
+
+/* 通用字體 */
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  color: var(--pri-black);
+}
+
+:root {
+  scroll-behavior: smooth;
+  /* 顏色變數 */
+  --pri-white: #f5f5f5;
+  --pri-lightgray: #b7b7b7;
+  --pri-gray: #646464;
+  --pri-black: #111111; /*文字主色*/
+  --pri-beige: beige;
+  --pri-yelgreen: #aaff00; /*icon*/
+  --pri-orgred: #fa3232; /*hover主色*/
+
+  /* 間距系統 (建議用變數管理) */
+  --sp-8: 8px;
+  --sp-12: 12px;
+  --sp-16: 16px;
+  --sp-20: 20px;
+  --sp-24: 24px;
+  --sp-28: 28px;
+  --sp-32: 32px;
+  --sp-40: 40px;
+  --sp-60: 60px;
+  --sp-80: 80px;
+  --sp-100: 100px;
+  --sp-120: 120px;
+  --sp-160: 160px;
+}
+
+/* 反白（選取）文字 */
+::selection {
+  background: rgba(170, 255, 0, 0.5);
+  color: #000;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--pri-black);
+  transition: color 0.3s; /* 讓變色有過渡動畫*/
+  z-index: 1;
+}
+
+a:not(.navbar-logo, .github-link, .contact-btn)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 97%;
+  height: 35%;
+  background: rgba(250, 50, 50, 0.7);
+  bottom: 20%;
+  opacity: 0; /* 初始隱藏 */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease, opacity 0.35s ease; /* 補上 opacity 的過渡 */
+  z-index: -1;
+}
+
+a:hover {
+  color: var(--pri-black); /* 滑鼠移過去變主色 */
+}
+
+a:not(.navbar-logo, .github-link, .contact-btn):hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%; /* 讓圖片「最大」只能跟容器一樣寬，但如果圖片原本比較小，就維持原大小*/
+}
+/* 確定某張圖，如 Hero Image）一定要撐滿，再額外給它一個 class  */
+.w-100 {
+  width: 100%;
+}
+
+/* 字體工具 */
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* 預設字級 */
+.fs-1 {
+  font-size: 40px;
+}
+
+.fs-2 {
+  font-size: 32px;
+}
+
+.fs-3 {
+  font-size: 28px;
+}
+
+.fs-4 {
+  font-size: 24px;
+}
+
+.fs-5 {
+  font-size: 20px;
+}
+.text-lg {
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.text-xl {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.text-md {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.text-sm {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.text-xs {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+/* Flexbox 工具 */
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+/* 間距工具 (使用邏輯屬性) */
+/* Gap */
+
+.gap-12 {
+  gap: var(--sp-12);
+}
+.gap-20 {
+  gap: var(--sp-20);
+}
+
+.gap-40 {
+  gap: var(--sp-40);
+}
+
+.gap-80 {
+  gap: var(--sp-80);
+}
+
+.gap-120 {
+  gap: var(--sp-120);
+}
+
+/* margin */
+.mt-120 {
+  margin-top: var(--sp-120);
+}
+
+.me-12 {
+  margin-right: var(--sp-12);
+}
+
+.me-80 {
+  margin-right: var(--sp-80);
+}
+
+.mb-12 {
+  margin-bottom: var(--sp-12);
+}
+
+.mb-16 {
+  margin-bottom: var(--sp-16);
+}
+.mb-20 {
+  margin-bottom: var(--sp-20);
+}
+
+.mb-28 {
+  margin-bottom: var(--sp-28);
+}
+
+.mb-40 {
+  margin-bottom: var(--sp-40);
+}
+
+.mb-60 {
+  margin-bottom: var(--sp-60);
+}
+
+.mb-80 {
+  margin-bottom: var(--sp-80);
+}
+
+.mb-120 {
+  margin-bottom: var(--sp-120);
+}
+
+.mb-160 {
+  margin-bottom: var(--sp-160);
+}
+
+/* padding */
+.pt-100 {
+  padding-top: var(--sp-100);
+}
+
+.pt-120 {
+  padding-top: var(--sp-120);
+}
+
+.pt-160 {
+  padding-top: var(--sp-160);
+}
+
+.pb-120 {
+  padding-bottom: var(--sp-120);
+}
+
+.pb-160 {
+  padding-bottom: var(--sp-160);
+}
+
+.ps-8 {
+  padding-left: var(--sp-8);
+}
+
+.px-20 {
+  padding-left: var(--sp-20);
+  padding-right: var(--sp-20);
+}
+
+.px-80 {
+  padding-left: var(--sp-80);
+  padding-right: var(--sp-80);
+}
+
+.py-16 {
+  padding-top: var(--sp-16);
+  padding-bottom: var(--sp-16);
+}
+
+.py-20 {
+  padding-top: var(--sp-20);
+  padding-bottom: var(--sp-20);
+}
+
+.py-40 {
+  padding-top: var(--sp-40);
+  padding-bottom: var(--sp-40);
+}
+
+.py-80 {
+  padding-top: var(--sp-80);
+  padding-bottom: var(--sp-80);
+}
+.py-160 {
+  padding-top: var(--sp-160);
+  padding-bottom: var(--sp-160);
+}
+
+/* 背景色 */
+.bg-transparent {
+  background: transparent;
+}
+
+.bg-lightgray {
+  background: var(--pri-lightgray);
+}
+
+.bg-white {
+  background: var(--pri-white);
+}
+
+.bg-black {
+  background: var(--pri-black);
+}
+.bg-beige {
+  background: var(--pri-beige);
+}
+
+.bg-lightblue {
+  background: lightblue;
+}
+
+/* 文字色 */
+
+.text-white {
+  color: var(--pri-white);
+}
+.text-lightgray {
+  color: var(--pri-lightgray);
+}
+
+.text-gray {
+  color: var(--pri-gray);
+}
+
+.text-black {
+  color: var(--pri-black);
+}
+.text-yelgreen {
+  color: var(--pri-yelgreen);
+}
+
+.text-orgred {
+  color: var(--pri-orgred);
+}
+
+/* border */
+/* border 粗細 */
+.border-0 {
+  border: none;
+}
+
+.border-3 {
+  border: 3px solid var(--pri-black);
+}
+
+/* border 顏色 */
+.border-orgred {
+  border-color: var(--pri-orgred);
+}
+
+.border-black {
+  border-color: var(--pri-black);
+}
+
+/* position */
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+/* 其他工具 */
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+/* 隱藏 overflow 捲軸 */
+.card-list {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.card-list::-webkit-scrollbar {
+  display: none;
+}
