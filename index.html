@@ -1,451 +1,525 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>個人網站-手刻</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/global.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <title>個人網站-手刻</title>
-</head>
-
-<body>
-  <!-- 導覽列 -->
-  <!-- class="bg-lightgray" -->
-  <header>
-    <nav class="container navbar">
-      <!-- navbar-wrap 灰底-->
-      <div class="navbar-wrap">
-        <a href="/index.html" class="navbar-logo text-orgred text-lg">▓</a>
-        <!-- 選單按鈕 -->
-        <button class="navbar-toggle bg-transparent text-orgred text-md">
-          <i class="bi bi-hash"></i>
-        </button>
-
-        <!-- 選單 -->
-        <div class="navbar-menu-wrap">
-          <button class="navbar-close bg-transparent text-orgred text-lg">
-            <i class="bi bi-x"></i>
+  <body>
+    <!-- 導覽列 -->
+    <!-- class="bg-lightgray" -->
+    <header>
+      <nav class="container navbar">
+        <!-- navbar-wrap 灰底-->
+        <div class="navbar-wrap">
+          <a href="/index.html" class="navbar-logo text-orgred text-lg">▓</a>
+          <!-- 選單按鈕 -->
+          <button class="navbar-toggle bg-transparent text-orgred text-md">
+            <i class="bi bi-hash"></i>
           </button>
-          <ul class="navbar-menu text-sm">
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+          <!-- 選單 -->
+          <div class="navbar-menu-wrap">
+            <button class="navbar-close bg-transparent text-orgred text-lg">
+              <i class="bi bi-x"></i>
+            </button>
+            <ul class="navbar-menu text-sm">
+              <li><a href="#about">About</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <!-- <li><a href="#">Log</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero-->
+      <section class="position-relative">
+        <div class="hero-area">
+          <div class="hero-vertical-text fw-semibold">
+            <h1 class="hero-slogan">
+              早安世界！今天也要創造舒適的使用者體驗！
+            </h1>
+            <p class="hero-text text-lightgray">
+              讓每一次的互動，都更直覺、更方便
+            </p>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/414630/pexels-photo-414630.jpeg"
+            class="hero"
+            alt="hero圖"
+          />
+        </div>
+        <div class="decor-text">Hello World</div>
+      </section>
+      <!-- 新增在這裡：定位文字 -->
+
+      <!-- self-intro 自我介紹  -->
+      <section id="about">
+        <div class="container pt-120">
+          <div class="section-title mb-40">
+            <h2 class="fs-2">個人介紹</h2>
+            <p class="text-xs text-gray">About</p>
+          </div>
+          <div class="info-img-wrap">
+            <div class="info-col">
+              <div class="intro-texts mb-40">
+                <div class="info-title d-flex">
+                  <a
+                    href="https://github.com/SJLU0?tab=repositories"
+                    target="_blank"
+                    class="github-link me-12"
+                  >
+                    <i class="bi bi-github fs-2 text-yelgreen"></i>
+                  </a>
+                  <h2 class="intro-headline mb-12">
+                    我是<span>呂思潔</span>，<br />一名專注前端技術的軟體工程師！
+                  </h2>
+                </div>
+                <p class="intro-text decor-yelgreen mb-12">
+                  過去 2 年的 Java
+                  開發背景使我具備後端思維，能產出結構嚴謹、易與 API
+                  整合的切版與 JS 程式碼。
+                </p>
+                <p class="intro-text decor-yelgreen mb-12">
+                  開發時，我會導入 AI 工具提升效率，並從使用者角度檢視介面細節。
+                </p>
+                <p class="intro-text decor-yelgreen mb-12">
+                  目前正在投入「六角學院——框架團體專題」精進前端架構，了解 React
+                  生態系。
+                </p>
+                <p class="intro-text decor-yelgreen">
+                  期待加入重視架構的團隊，打造易維護且直覺的網頁介面！
+                </p>
+              </div>
+              <!-- 個人資料區塊 -->
+              <div class="info mb-40">
+                <!-- 左欄資料 -->
+                <div class="left-info mb-12">
+                  <div class="info-row">
+                    <span class="info-label text-gray">居住地</span>
+                    <span class="info-value text-black">臺北市</span>
+                  </div>
+
+                  <div class="info-row">
+                    <span class="info-label text-gray">工作地</span>
+                    <span class="info-value text-black">臺北市、新北市</span>
+                  </div>
+
+                  <div class="info-row">
+                    <span class="info-label text-gray">信箱</span>
+                    <span class="info-value text-black">
+                      <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=sjlu78713@gmail.com&su=合作邀約&body=您好思潔，我看過您的作品集，想詢問..."
+                        target=" _blank"
+                        >sjlu78713@gmail.com</a
+                      >
+                    </span>
+                  </div>
+                </div>
+                <!-- 右欄資料 -->
+                <div class="right-info">
+                  <div class="info-row">
+                    <span class="info-label text-gray">中文</span>
+                    <span class="info-value text-black">母語</span>
+                  </div>
+
+                  <div class="info-row">
+                    <span class="info-label text-gray">英文</span>
+                    <span class="info-value text-black">日常會話</span>
+                  </div>
+
+                  <div class="info-row">
+                    <span class="info-label text-gray">日文</span>
+                    <span class="info-value text-black">日常會話</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 個人資料結束 -->
+            </div>
+            <div class="img-col">
+              <img
+                src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=480&h=480&fit=crop&auto=format"
+                class=""
+                alt="個人履歷照"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Resume 專業經歷-->
+      <section id="resume" class="resume">
+        <div class="container pt-120">
+          <div class="section-title mb-40">
+            <h2 class="fs-2">專業經歷</h2>
+            <p class="text-xs text-gray">Resume</p>
+          </div>
+          <!-- 技能、經歷容器-->
+          <div class="skill-exp-wrapper">
+            <!-- 經歷欄-->
+            <div class="exp-col mb-40">
+              <h3 class="sub-title decor-orgred fs-4 mb-40">歷年經歷</h3>
+              <!-- 六角學院 -->
+              <div class="exp-group mb-40">
+                <div class="exp-title d-flex align-center justify-between">
+                  <h4 class="sub-title decor-yelgreen fs-5">React 專題班</h4>
+                  <p class="text-lightgray">2024.09 - Present</p>
+                </div>
+                <h5 class="text-gray mb-12">六角學院 - 團體專題</h5>
+                <ul class="exp-list text-sm fw-normal">
+                  <li class="exp-capsule">
+                    專注於 React 生態系開發，負責專案架構規劃與元件拆分。
+                  </li>
+                  <li class="exp-capsule">
+                    負責後端 API 開發與資料庫維護。熟悉 SpringBoot 框架與 MySQL
+                    資料庫設計。
+                  </li>
+                </ul>
+              </div>
+              <!-- 凱發科技 -->
+              <div class="exp-group mb-40">
+                <div class="exp-title d-flex align-center justify-between">
+                  <h4 class="sub-title decor-yelgreen fs-5">Java工程師</h4>
+                  <p class="text-lightgray">2024.09 - Present</p>
+                </div>
+                <h5 class="text-gray mb-12">凱發科技</h5>
+                <ul class="exp-list text-sm">
+                  <li class="exp-capsule">
+                    協助系統維運與伺服器管理，確保專案穩定運行。
+                  </li>
+                  <li class="exp-capsule">
+                    協助系統維運與伺服器管理，確保專案穩定運行。
+                  </li>
+                </ul>
+              </div>
+              <!-- 凱發科技 -->
+              <div class="exp-group mb-40">
+                <div class="exp-title d-flex align-center justify-between">
+                  <h4 class="sub-title decor-yelgreen fs-5">Java工程師</h4>
+                  <p class="text-lightgray">2024.09 - Present</p>
+                </div>
+                <h5 class="text-gray mb-12">凱發科技</h5>
+                <ul class="exp-list text-sm">
+                  <li class="exp-capsule">
+                    協助系統維運與伺服器管理，確保專案穩定運行。
+                  </li>
+                  <li class="exp-capsule">
+                    協助系統維運與伺服器管理，確保專案穩定運行。
+                  </li>
+                </ul>
+              </div>
+              <!-- 凱發科技 -->
+              <div class="exp-group">
+                <div class="exp-title d-flex align-center justify-between">
+                  <h4 class="sub-title decor-yelgreen fs-5">Java工程師</h4>
+                  <p class="text-lightgray">2024.09 - Present</p>
+                </div>
+                <h5 class="text-gray mb-12">凱發科技</h5>
+                <ul class="exp-list text-sm">
+                  <li class="exp-capsule">
+                    協助系統維運與伺服器管理，確保專案穩定運行。
+                  </li>
+                  <li class="exp-capsule">
+                    協助系統維運與伺服器管理，確保專案穩定運行。
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 技能欄-->
+            <div class="skill-col mb-40">
+              <div class="skill-certificate-group">
+                <h3 class="sub-title decor-orgred fs-4 mb-40">技術</h3>
+                <!-- 前端核心 -->
+                <div class="skill-group mb-40">
+                  <h4 class="sub-title decor-yelgreen fs-5 mb-12">
+                    前端核心語言
+                  </h4>
+                  <ul class="skill-list d-flex flex-wrap gap-20 text-gray">
+                    <li class="skill-capsule">HTML5</li>
+                    <li class="skill-capsule">CSS3 / Flexbox</li>
+                    <li class="skill-capsule">RWD 響應式設計</li>
+                    <li class="skill-capsule">JavaScript ES6+</li>
+                  </ul>
+                </div>
+                <!-- 前端框架 -->
+                <div class="skill-group mb-40">
+                  <h4 class="sub-title decor-yelgreen fs-5 mb-12">
+                    前端框架與工具
+                  </h4>
+                  <ul class="skill-list d-flex flex-wrap gap-20 text-gray">
+                    <li class="skill-capsule">React</li>
+                    <li class="skill-capsule">Bootstrap5</li>
+                    <li class="skill-capsule">SCSS / SASS</li>
+                    <li class="skill-capsule">Vite</li>
+                  </ul>
+                </div>
+                <!-- 後端 -->
+                <div class="skill-group mb-40">
+                  <h4 class="sub-title decor-yelgreen fs-5 mb-12">
+                    後端語言與資料庫
+                  </h4>
+                  <ul class="skill-list d-flex flex-wrap gap-20 text-gray">
+                    <li class="skill-capsule">Java</li>
+                    <li class="skill-capsule">SpringBoot</li>
+                    <li class="skill-capsule">MySQL</li>
+                    <li class="skill-capsule">MSSQL</li>
+                  </ul>
+                </div>
+                <!-- 版控與協作工具 -->
+                <div class="skill-group mb-40">
+                  <h4 class="sub-title decor-yelgreen fs-5 mb-12">
+                    版控與協作工具
+                  </h4>
+                  <ul class="skill-list d-flex flex-wrap gap-20 text-gray">
+                    <li class="skill-capsule">Git</li>
+                    <li class="skill-capsule">GitHub</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 證書欄 -->
+              <div class="certificate">
+                <h3 class="sub-title decor-orgred fs-4 mb-40">證書</h3>
+                <div class="certificate-group overflow-x-auto d-flex gap-12">
+                  <img
+                    src="./imgs/2025-JS養成直播班-完課證書.png"
+                    alt="證書圖"
+                    class="certificate-img border-3 border-black"
+                  />
+                  <img
+                    src="./imgs/2025-切版專題班-專題實作全能證書.png"
+                    alt="證書圖"
+                    class="certificate-img border-3 border-black"
+                  />
+                  <img
+                    src="./imgs/2023-恆逸-Java全方位養成班.jpg"
+                    alt="證書圖"
+                    class="certificate-img border-3 border-black"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio 作品集小卡 -->
+      <section id="portfolio">
+        <div class="portfolio pt-100 pb-120">
+          <div class="section-title container mb-40">
+            <h2 class="fs-2">我的作品</h2>
+            <p class="text-xs text-gray">Portfolio</p>
+          </div>
+          <div class="project-group right-container">
+            <!-- 團體專題 -->
+            <div class="project mb-40">
+              <ul class="card-list d-flex overflow-x-auto gap-12 mb-20">
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+              </ul>
+              <!-- 小標題 -->
+              <div class="card-titleList d-flex align-baseline gap-12">
+                <p class="card-title fs-5">團隊專題</p>
+                <p class="sub-title text-xs">Team Projects</p>
+              </div>
+            </div>
+            <!-- 多頁式 -->
+            <div class="project mb-40">
+              <ul class="card-list d-flex overflow-x-auto gap-12 mb-20">
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+              </ul>
+              <!-- 小標題 -->
+              <div class="card-titleList d-flex align-baseline gap-12">
+                <p class="card-title fs-5">多頁式切版</p>
+                <p class="sub-title text-xs">Multi-page Layouts</p>
+              </div>
+            </div>
+            <!-- 單頁式 -->
+            <div class="project mb-40">
+              <ul class="card-list d-flex overflow-x-auto gap-12 mb-20">
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="小卡圖"
+                    class="border-3 border-black"
+                  />
+                </li>
+              </ul>
+              <!-- 小標題  作品多了就改成 Landing Page-->
+              <div class="card-titleList d-flex align-baseline gap-12">
+                <p class="card-title fs-5">單頁式切版</p>
+                <p class="sub-title text-xs">Single-page Layouts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact 聯絡我 -->
+      <section id="contact">
+        <div class="contact-bg pt-160 pb-160">
+          <div class="contact-area container">
+            <div class="section-title contact-title text-white mb-40">
+              <h2 class="fs-2">聯絡我</h2>
+              <p class="text-xs">Contact</p>
+            </div>
+            <!-- 聯絡我表單 -->
+            <div class="contact-form fs-5">
+              <div class="contact-form-text text-white mb-40">
+                <p>有任何電商、企業網站的切版需求嗎？</p>
+                <p>點擊按鈕就可以寄送郵件給我，我會盡快回覆您！</p>
+              </div>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=sjlu78713@gmail.com&su=合作邀約&body=您好思潔，我看過您的作品集，想詢問..."
+                target=" _blank"
+                class="contact-btn fs-5 fw-semibold px-20 py-16 text-black"
+              >
+                <i class="bi bi-envelope-fill me-12"></i>與我聯繫
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-area container py-40">
+        <p class="footer-text">SJLU's Website</p>
+        <div class="footer-info">
+          <ul class="footer-menu">
+            <li><a href="#about" class="text-gray">About</a></li>
+            <li><a href="#resume" class="text-gray">Resume</a></li>
+            <li><a href="#portfolio" class="text-gray">Portfolio</a></li>
+            <li><a href="#contact" class="text-gray">Contact</a></li>
             <!-- <li><a href="#">Log</a></li> -->
           </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-
-    <!-- Hero-->
-    <section class="position-relative">
-      <div class="hero-area">
-        <div class="hero-vertical-text fw-semibold">
-          <h1 class="hero-slogan">
-            早安世界！今天也要創造舒適的使用者體驗！
-          </h1>
-          <p class="hero-text text-lightgray">
-            讓每一次的互動，都更直覺、更方便
-          </p>
-        </div>
-        <img src="https://images.pexels.com/photos/414630/pexels-photo-414630.jpeg" class="hero" alt="hero圖" />
-      </div>
-      <div class="decor-text">
-        Hello World
-      </div>
-    </section>
-    <!-- 新增在這裡：定位文字 -->
-
-    <!-- self-intro 自我介紹  -->
-    <section id="about">
-      <div class="container pt-120">
-        <div class="section-title mb-40">
-          <h2 class="fs-2">個人介紹</h2>
-          <p class="text-xs text-gray">About</p>
-        </div>
-        <div class="info-img-wrap">
-          <div class="info-col">
-            <div class="intro-texts mb-40">
-              <h2 class="intro-headline mb-12">
-                我是<span>呂思潔</span>，<br />一名專注前端技術的軟體工程師！
-              </h2>
-              <p class="intro-text decor-yelgreen mb-12">
-                過去 2 年的 Java 開發背景使我具備後端思維，能產出結構嚴謹、易與
-                API 整合的切版與 JS 程式碼。
-              </p>
-              <p class="intro-text decor-yelgreen mb-12">
-                開發時，我會導入 AI 工具提升效率，並從使用者角度檢視介面細節。
-              </p>
-              <p class="intro-text decor-yelgreen mb-12">
-                目前正在投入「六角學院——框架團體專題」精進前端架構，了解 React
-                生態系。
-              </p>
-              <p class="intro-text decor-yelgreen">
-                期待加入重視架構的團隊，打造易維護且直覺的網頁介面！
-              </p>
-            </div>
-            <!-- 個人資料區塊 -->
-            <div class="info mb-40">
-              <!-- 左欄資料 -->
-              <div class="left-info">
-                <div class="github mb-12">
-                  <a href="https://github.com/SJLU0?tab=repositories" target="_blank" class="github-link"> <i
-                      class="bi bi-github fs-2 text-gray"></i> </a>
-                </div>
-                <div class="info-row">
-                  <span class="info-label text-gray">居住地</span>
-                  <span class="info-value text-black">臺北市</span>
-                </div>
-
-                <div class="info-row">
-                  <span class="info-label text-gray">工作地</span>
-                  <span class="info-value text-black">臺北市、新北市</span>
-                </div>
-
-                <div class="info-row">
-                  <span class="info-label text-gray">信箱</span>
-                  <span class="info-value text-black">sjlu78713@gmail.com</span>
-                </div>
-              </div>
-              <!-- 右欄資料 -->
-              <div class="right-info">
-                <div class="info-row">
-                  <span class="info-label text-gray">中文</span>
-                  <span class="info-value text-black">母語</span>
-                </div>
-
-                <div class="info-row">
-                  <span class="info-label text-gray">英文</span>
-                  <span class="info-value text-black">日常會話</span>
-                </div>
-
-                <div class="info-row">
-                  <span class="info-label text-gray">日文</span>
-                  <span class="info-value text-black">日常會話</span>
-                </div>
-              </div>
-            </div>
-            <!-- 個人資料結束 -->
-          </div>
-          <div class="img-col">
-            <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=480&h=480&fit=crop&auto=format"
-              class="" alt="個人履歷照" />
+          <div class="copyright text-gray">
+            <p>
+              Images ©
+              <a href="https://unsplash.com/" target=" _blank" class="text-gray"
+                >Unsplash</a
+              >
+              ·
+              <a
+                href="https://www.pexels.com/zh-tw/"
+                target=" _blank"
+                class="text-gray"
+                >Pexels</a
+              >
+            </p>
+            <p>
+              Reference site ·
+              <a href="https://moyogae.com/" target=" _blank" class="text-gray"
+                >moyogae.com</a
+              >
+            </p>
+            <p>This project is for practice purposes only.</p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Resume 專業經歷-->
-    <section id="resume" class="resume">
-      <div class="container pt-120">
-        <div class="section-title mb-40">
-          <h2 class="fs-2">專業經歷</h2>
-          <p class="text-xs text-gray">Resume</p>
-        </div>
-        <!-- 技能、經歷容器-->
-        <div class="skill-exp-wrapper">
-          <!-- 經歷欄-->
-          <div class="exp-col mb-40">
-            <h3 class="sub-title decor-orgred fs-4 mb-40">歷年經歷</h3>
-            <!-- 六角學院 -->
-            <div class="exp-group mb-40">
-              <div class="exp-title d-flex align-center justify-between">
-                <h4 class="sub-title decor-yelgreen fs-5">React 專題班</h4>
-                <p class="text-lightgray">2024.09 - Present</p>
-              </div>
-              <h5 class="text-gray mb-12">六角學院 - 團體專題</h5>
-              <ul class="exp-list text-sm fw-normal">
-                <li class="exp-capsule">
-                  專注於 React 生態系開發，負責專案架構規劃與元件拆分。
-                </li>
-                <li class="exp-capsule">
-                  負責後端 API 開發與資料庫維護。熟悉 SpringBoot 框架與 MySQL
-                  資料庫設計。
-                </li>
-              </ul>
-            </div>
-            <!-- 凱發科技 -->
-            <div class="exp-group mb-40">
-              <div class="exp-title d-flex align-center justify-between">
-                <h4 class="sub-title decor-yelgreen fs-5">Java工程師</h4>
-                <p class="text-lightgray">2024.09 - Present</p>
-              </div>
-              <h5 class="text-gray mb-12">凱發科技</h5>
-              <ul class="exp-list text-sm">
-                <li class="exp-capsule">
-                  協助系統維運與伺服器管理，確保專案穩定運行。
-                </li>
-                <li class="exp-capsule">
-                  協助系統維運與伺服器管理，確保專案穩定運行。
-                </li>
-              </ul>
-            </div>
-            <!-- 凱發科技 -->
-            <div class="exp-group mb-40">
-              <div class="exp-title d-flex align-center justify-between">
-                <h4 class="sub-title decor-yelgreen fs-5">Java工程師</h4>
-                <p class="text-lightgray">2024.09 - Present</p>
-              </div>
-              <h5 class="text-gray mb-12">凱發科技</h5>
-              <ul class="exp-list text-sm">
-                <li class="exp-capsule">
-                  協助系統維運與伺服器管理，確保專案穩定運行。
-                </li>
-                <li class="exp-capsule">
-                  協助系統維運與伺服器管理，確保專案穩定運行。
-                </li>
-              </ul>
-            </div>
-            <!-- 凱發科技 -->
-            <div class="exp-group">
-              <div class="exp-title d-flex align-center justify-between">
-                <h4 class="sub-title decor-yelgreen fs-5">Java工程師</h4>
-                <p class="text-lightgray">2024.09 - Present</p>
-              </div>
-              <h5 class="text-gray mb-12">凱發科技</h5>
-              <ul class="exp-list text-sm">
-                <li class="exp-capsule">
-                  協助系統維運與伺服器管理，確保專案穩定運行。
-                </li>
-                <li class="exp-capsule">
-                  協助系統維運與伺服器管理，確保專案穩定運行。
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- 技能欄-->
-          <div class="skill-col mb-40">
-            <div class="skill-certificate-group">
-              <h3 class="sub-title decor-orgred fs-4 mb-40">技術</h3>
-              <!-- 前端核心 -->
-              <div class="skill-group mb-40">
-                <h4 class="sub-title decor-yelgreen fs-5 mb-12">前端核心語言</h4>
-                <ul class="skill-list d-flex flex-wrap gap-20 text-gray">
-                  <li class="skill-capsule">HTML5</li>
-                  <li class="skill-capsule">CSS3 / Flexbox</li>
-                  <li class="skill-capsule">RWD 響應式設計</li>
-                  <li class="skill-capsule">JavaScript ES6+</li>
-                </ul>
-              </div>
-              <!-- 前端框架 -->
-              <div class="skill-group mb-40">
-                <h4 class="sub-title decor-yelgreen fs-5 mb-12">前端框架與工具</h4>
-                <ul class="skill-list d-flex flex-wrap gap-20 text-gray">
-                  <li class="skill-capsule">React</li>
-                  <li class="skill-capsule">Bootstrap5</li>
-                  <li class="skill-capsule">SCSS / SASS</li>
-                  <li class="skill-capsule">Vite</li>
-                </ul>
-              </div>
-              <!-- 後端 -->
-              <div class="skill-group mb-40">
-                <h4 class="sub-title decor-yelgreen fs-5 mb-12">後端語言與資料庫</h4>
-                <ul class="skill-list d-flex flex-wrap gap-20 text-gray">
-                  <li class="skill-capsule">Java</li>
-                  <li class="skill-capsule">SpringBoot</li>
-                  <li class="skill-capsule">MySQL</li>
-                  <li class="skill-capsule">MSSQL</li>
-                </ul>
-              </div>
-              <!-- 版控與協作工具 -->
-              <div class="skill-group mb-40">
-                <h4 class="sub-title decor-yelgreen fs-5 mb-12">版控與協作工具</h4>
-                <ul class="skill-list d-flex flex-wrap gap-20 text-gray">
-                  <li class="skill-capsule">Git</li>
-                  <li class="skill-capsule">GitHub</li>
-                </ul>
-              </div>
-            </div>
-            <!-- 證書欄 -->
-            <div class="certificate">
-              <h3 class="sub-title decor-orgred fs-4 mb-40">證書</h3>
-              <div class="certificate-group overflow-x-auto d-flex gap-12">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="certificate-img border-3 border-black" />
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="certificate-img border-3 border-black" />
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="certificate-img border-3 border-black" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio 作品集小卡 -->
-    <section id="portfolio">
-      <div class="portfolio pt-100 pb-120">
-        <div class="section-title container mb-40">
-          <h2 class="fs-2">我的作品</h2>
-          <p class="text-xs text-gray">Portfolio</p>
-        </div>
-        <div class="project-group right-container">
-          <!-- 團體專題 -->
-          <div class="project mb-40">
-            <ul class="card-list d-flex overflow-x-auto gap-12 mb-20">
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-            </ul>
-            <!-- 小標題 -->
-            <div class="card-titleList d-flex align-baseline gap-12">
-              <p class="card-title fs-5">團隊專題</p>
-              <p class="sub-title text-xs">Team Projects</p>
-            </div>
-          </div>
-          <!-- 多頁式 -->
-          <div class="project mb-40">
-            <ul class="card-list d-flex overflow-x-auto gap-12 mb-20">
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-            </ul>
-            <!-- 小標題 -->
-            <div class="card-titleList d-flex align-baseline gap-12">
-              <p class="card-title fs-5">多頁式切版</p>
-              <p class="sub-title text-xs">Multi-page Layouts</p>
-            </div>
-          </div>
-          <!-- 單頁式 -->
-          <div class="project mb-40">
-            <ul class="card-list d-flex overflow-x-auto gap-12 mb-20">
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-              <li class="card">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1746124306916-cce4c700df5e?q=80&w=1355&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="小卡圖" class="border-3 border-black" />
-              </li>
-            </ul>
-            <!-- 小標題  作品多了就改成 Landing Page-->
-            <div class="card-titleList d-flex align-baseline gap-12">
-              <p class="card-title fs-5">單頁式切版</p>
-              <p class="sub-title text-xs">Single-page Layouts</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact 聯絡我 -->
-    <section id="contact">
-      <div class="contact-bg pt-160 pb-160">
-        <div class="contact-area container">
-          <div class="section-title contact-title text-white mb-40">
-            <h2 class="fs-2">聯絡我</h2>
-            <p class="text-xs ">Contact</p>
-          </div>
-          <!-- 聯絡我表單 -->
-          <div class="contact-form fs-5">
-            <div class="contact-form-text text-white mb-40">
-              <p>有任何電商、企業網站的切版需求嗎？</p>
-              <p>點擊按鈕就可以寄送郵件給我，我會盡快回覆您！</p>
-            </div>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sjlu78713@gmail.com&su=合作邀約&body=您好思潔，我看過您的作品集，想詢問...""
-              target=" _blank" class="contact-btn fs-5 fw-semibold px-20 py-16 text-black">
-              <i class="bi bi-envelope-fill me-12"></i>與我聯繫
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer-area container py-40">
-      <p class="footer-text">SJLU's Website</p>
-      <div class="footer-info">
-        <ul class="footer-menu">
-          <li><a href="#about" class="text-gray">About</a></li>
-          <li><a href="#resume" class="text-gray">Resume</a></li>
-          <li><a href="#portfolio" class="text-gray">Portfolio</a></li>
-          <li><a href="#contact" class="text-gray">Contact</a></li>
-          <!-- <li><a href="#">Log</a></li> -->
-        </ul>
-        <div class="copyright text-gray">
-          <p>
-            Images ©
-            <a href="https://unsplash.com/" target=" _blank" class="text-gray">Unsplash</a> ·
-            <a href="https://www.pexels.com/zh-tw/" target=" _blank" class="text-gray">Pexels</a>
-          </p>
-          <p>
-            Reference site ·
-            <a href="https://moyogae.com/" target=" _blank" class="text-gray">moyogae.com</a>
-          </p>
-          <p>This project is for practice purposes only.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="/js/main.js"></script>
-</body>
-
+    <script src="/js/main.js"></script>
+  </body>
 </html>
