@@ -650,7 +650,7 @@
 
 .ticker-track {
   width: max-content;
-  animation: ticker-loop 20s linear infinite;
+  animation: ticker-loop 30s linear infinite;
 }
 
 .loop-text {
