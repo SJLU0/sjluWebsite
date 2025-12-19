@@ -147,8 +147,6 @@
 @media (min-width: 768px) {
   .navbar {
     z-index: 999;
-    padding-top: 40px;
-    padding-bottom: 40px;
   }
 
   .navbar-wrap {
@@ -448,8 +446,14 @@
   background: var(--pri-yelgreen);
 }
 
-.certificate-img {
+.certificate-card {
   width: 50vw;
+  aspect-ratio: 6 / 4;
+}
+.certificate-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -461,20 +465,19 @@
   .exp-col {
     width: calc(50% - 60px);
   }
-  .certificate-img {
-    width: 11vw;
-  }
 }
 
 /* 🔸 resume 專業經歷 結束 🔸 */
 /* 🔸 profolio 作品集 開始🔸 */
 .card {
   width: 90vw;
+  aspect-ratio: 6 / 4;
   flex-shrink: 0;
 }
-
 .card img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* 桌機版 */
@@ -636,6 +639,37 @@
 
 .copyright {
   font-size: 10px;
+}
+
+.footer-ticker {
+  overflow: hidden;
+  width: 100%;
+  opacity: 0.7;
+  letter-spacing: 0.1em;
+}
+
+.ticker-track {
+  width: max-content;
+  animation: ticker-loop 20s linear infinite;
+}
+
+.loop-text {
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+@keyframes ticker-loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* hover就暫停 */
+.footer-ticker:hover .ticker-track {
+  animation-play-state: paused;
 }
 
 @media (min-width: 768px) {
