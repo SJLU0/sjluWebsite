@@ -393,6 +393,10 @@ img {
   border-color: var(--pri-orgred);
 }
 
+.border-yelgreen {
+  border-color: var(--pri-yelgreen);
+}
+
 .border-black {
   border-color: var(--pri-black);
 }
