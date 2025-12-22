@@ -34,7 +34,7 @@ body {
   --pri-gray: #646464;
   --pri-black: #111111; /*文字主色*/
   --pri-beige: beige;
-  --pri-yelgreen: #aaff00; /*icon*/
+  --pri-yelgreen: #d7ff00; /*icon*/
   --pri-orgred: #fa3232; /*hover主色*/
 
   /* 間距系統 (建議用變數管理) */
