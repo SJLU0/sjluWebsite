@@ -421,6 +421,10 @@
 /* 🔸 自我介紹 結束🔸 */
 
 /* 🔸 resume 專業經歷 設定🔸 */
+.exp-list {
+  list-style-type: square;
+  margin-left: 1.5em;
+}
 
 .skill-exp-wrapper {
   display: flex;
@@ -439,6 +443,7 @@
   transition: transform 0.3s ease, background 0.3s ease, border-radius 0.3s ease,
     color 0.3s ease;
 }
+
 .skill-capsule:hover {
   color: var(--pri-black);
   border-radius: 50px;
