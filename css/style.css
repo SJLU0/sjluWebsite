@@ -164,12 +164,39 @@
     height: auto;
   }
 
+  /* 定義logo彈跳動態 */
+  /* 跳動的劇本 */
+  @keyframes bounce-move {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    } /* 往上跳 10px */
+  }
+
+  /* 旋轉的劇本 */
+  @keyframes spin-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .inner-logo {
+    display: inline-block;
+    animation: spin-rotate 5s linear infinite;
+  }
   .navbar-logo {
     cursor: pointer;
+    animation: bounce-move 0.5s ease-in-out infinite alternate;
   }
 
   .navbar-logo:hover {
     color: var(--pri-yelgreen);
+    animation-play-state: paused;
   }
 
   .navbar-menu {
