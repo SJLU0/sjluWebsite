@@ -24,6 +24,7 @@ body {
   line-height: 2;
   letter-spacing: 0.05em;
   color: var(--pri-black);
+  overflow-x: hidden; /* 讓GSAP不會出現X軸 */
 }
 
 :root {
