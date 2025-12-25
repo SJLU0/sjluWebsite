@@ -81,7 +81,7 @@ Fancybox.bind("[data-fancybox]", {
   // 3. 輪播與滑動設定
   Carousel: {
     touch: true, // ✅ 手機/滑鼠可以拖曳滑動
-    Navigation: true, // ✅ 顯示左右切換箭頭
+    Navigation: false, // ✅ 顯示左右切換箭頭
   },
 
   // 4. 允許無限循環 (滑到最後一張接回第一張)
