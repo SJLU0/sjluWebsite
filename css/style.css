@@ -738,3 +738,10 @@
 }
 
 /* 🔸 footer 結束 🔸*/
+
+/*fancy box*/
+/* 隱藏 Fancybox 的左右箭頭 */
+.f-button[data-carousel-prev],
+.f-button[data-carousel-next] {
+  display: none !important;
+}
